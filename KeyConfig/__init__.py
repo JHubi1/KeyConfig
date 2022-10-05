@@ -10,9 +10,6 @@ class config():
                 os.makedirs(path)
         self.__file = pathToFile
         fileDir = os.path.dirname(os.path.abspath(self.__file))
-        print(os.path.abspath(self.__file))
-        print(self.__file)
-        print(fileDir)
         makeDirectory(fileDir)
     def getConfig(self, targetKey, file = None):
         if file == None:
